@@ -9,7 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
     </div>
   `,
   styles: [
-    '.back{width: 100%; height: 30px; display: flex; align-items: center; border-radius: 8px; cursor: pointer;}',
+    '.back{width: 100%; height: 30px; display: flex; align-items: center; border-radius: 8px; cursor: pointer; margin-top: 5px;}',
     'span{color: white; margin-left: 5px; font-size: 16px; font-weight: 500;}',
     '.back:hover{background: rgba(255,255,255,0.1); }',
     '.active{background: rgba(255,255,255,0.4);}',
