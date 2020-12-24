@@ -4,13 +4,13 @@ import {Component, Input, OnInit} from '@angular/core';
   selector: 'app-user-card',
   template: `
    <div class="user">
-     <app-owner-icon *ngIf="user.admin"></app-owner-icon>
      <span>{{user.name}}</span>
+     <app-owner-icon *ngIf="user.admin"></app-owner-icon>
    </div>
   `,
   styles: [
     '.user{width: 100%; height: 45px; display: flex; align-items: center;}',
-    'span{color: white; margin-left: 10px; font-size: 17px; font-weight: 500;}'
+    'span{color: white; font-size: 17px; font-weight: 500;}'
   ]
 })
 export class UserCardComponent implements OnInit {
