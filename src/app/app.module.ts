@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TopBarComponent } from './left-nav/top-bar.component';
 import { ChannelListComponent } from './left-nav/channel-list.component';
 import { ChannelLinkComponent } from './left-nav/channel-link.component';
+import { MainSectionComponent } from './main-section/main-section.component';
+import { RightNavComponent } from './right-nav/right-nav.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ChannelLinkComponent } from './left-nav/channel-link.component';
     LeftNavComponent,
     TopBarComponent,
     ChannelListComponent,
-    ChannelLinkComponent
+    ChannelLinkComponent,
+    MainSectionComponent,
+    RightNavComponent
   ],
   imports: [
     BrowserModule,
