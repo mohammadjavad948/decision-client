@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "decision-client"
+  "defaultProject": "decision-client",
+  "cli": {
+    "analytics": false
+  }
 }
