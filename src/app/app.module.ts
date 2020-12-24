@@ -11,6 +11,7 @@ import { ChannelLinkComponent } from './left-nav/channel-link.component';
 import { MainSectionComponent } from './main-section/main-section.component';
 import { RightNavComponent } from './right-nav/right-nav.component';
 import { UserCardComponent } from './right-nav/user-card.component';
+import { OwnerIconComponent } from './right-nav/owner-icon.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UserCardComponent } from './right-nav/user-card.component';
     ChannelLinkComponent,
     MainSectionComponent,
     RightNavComponent,
-    UserCardComponent
+    UserCardComponent,
+    OwnerIconComponent
   ],
   imports: [
     BrowserModule,
