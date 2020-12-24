@@ -3,10 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-channel-list',
   template: `
-    <div class="list"></div>
+    <div class="list">
+      <app-channel-link></app-channel-link>
+    </div>
   `,
   styles: [
-    '.list{width: 100%; height: -webkit-fill-available; overflow: hidden auto;}',
+    '.list{width: 100%; height: -webkit-fill-available; overflow: hidden auto; padding-top: 20px;}',
     '::-webkit-scrollbar {width: 10px;}',
     '::-webkit-scrollbar-track {background: #282c3382;}',
     '::-webkit-scrollbar-track {background: #888;}',
