@@ -7,13 +7,15 @@ import { LeftNavComponent } from './left-nav/left-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TopBarComponent } from './left-nav/top-bar.component';
 import { ChannelListComponent } from './left-nav/channel-list.component';
+import { ChannelLinkComponent } from './left-nav/channel-link.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LeftNavComponent,
     TopBarComponent,
-    ChannelListComponent
+    ChannelListComponent,
+    ChannelLinkComponent
   ],
   imports: [
     BrowserModule,
