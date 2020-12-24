@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LeftNavComponent } from './left-nav/left-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TopBarComponent } from './left-nav/top-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeftNavComponent
+    LeftNavComponent,
+    TopBarComponent
   ],
   imports: [
     BrowserModule,
