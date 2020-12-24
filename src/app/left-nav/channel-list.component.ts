@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-channel-list',
   template: `
     <div class="list">
-      <app-channel-link></app-channel-link>
+      <app-channel-link [channel]="{name: 'test'}"></app-channel-link>
     </div>
   `,
   styles: [
