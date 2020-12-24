@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
     </div>
   `,
   styles: [
-    '.list{width: 100%; height: -webkit-fill-available; overflow: hidden auto; padding-top: 20px;}',
+    '.list{height: -webkit-fill-available; overflow: hidden auto; padding: 20px 5px 0 5px;}',
     '::-webkit-scrollbar {width: 10px;}',
     '::-webkit-scrollbar-track {background: #282c3382;}',
     '::-webkit-scrollbar-track {background: #888;}',
