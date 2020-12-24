@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
     '.top-bar{width: 100%; height: 48px; display: flex; align-items: center; justify-content: space-between; color: white;}',
     'hr{margin: unset;}',
     '.text{margin-left: 5px; font-size: 17px; line-height: 25px; font-weight: 700;}',
-    '.cog{width: 20px; margin-right: 5px;}'
+    '.cog{width: 20px; margin-right: 10px;}'
   ]
 })
 export class TopBarComponent implements OnInit {
