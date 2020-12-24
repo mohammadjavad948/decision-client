@@ -10,6 +10,7 @@ import { ChannelListComponent } from './left-nav/channel-list.component';
 import { ChannelLinkComponent } from './left-nav/channel-link.component';
 import { MainSectionComponent } from './main-section/main-section.component';
 import { RightNavComponent } from './right-nav/right-nav.component';
+import { UserCardComponent } from './right-nav/user-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RightNavComponent } from './right-nav/right-nav.component';
     ChannelListComponent,
     ChannelLinkComponent,
     MainSectionComponent,
-    RightNavComponent
+    RightNavComponent,
+    UserCardComponent
   ],
   imports: [
     BrowserModule,
