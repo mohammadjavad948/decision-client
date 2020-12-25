@@ -13,6 +13,7 @@ import { RightNavComponent } from './right-nav/right-nav.component';
 import { UserCardComponent } from './right-nav/user-card.component';
 import { OwnerIconComponent } from './right-nav/owner-icon.component';
 import { ChannelNameComponent } from './main-section/channel-name.component';
+import { ChatComponent } from './main-section/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ChannelNameComponent } from './main-section/channel-name.component';
     RightNavComponent,
     UserCardComponent,
     OwnerIconComponent,
-    ChannelNameComponent
+    ChannelNameComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
