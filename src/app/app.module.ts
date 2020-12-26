@@ -16,6 +16,7 @@ import { ChannelNameComponent } from './main-section/channel-name.component';
 import { ChatComponent } from './main-section/chat/chat.component';
 import { ChatInputComponent } from './main-section/chat-input/chat-input.component';
 import { UserChatComponent } from './main-section/user-chat/user-chat.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserChatComponent } from './main-section/user-chat/user-chat.component'
     ChannelNameComponent,
     ChatComponent,
     ChatInputComponent,
-    UserChatComponent
+    UserChatComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
