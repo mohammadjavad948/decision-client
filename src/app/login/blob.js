@@ -54,7 +54,7 @@ export function runAnime(){
       c.save();
       c.translate(-10, -10);
       c.scale(SCALE, SCALE);
-      c.fillStyle = "blue";
+      c.fillStyle = "#2d353e";
       c.beginPath();
       c.moveTo(0, 0);
       bezierSkin(this.anchors, false);
