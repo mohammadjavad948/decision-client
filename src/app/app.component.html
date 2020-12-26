@@ -1,4 +1,5 @@
-<div class="main">
+<div class="main" *ngIf="login.isLogin()">
   <app-left-nav></app-left-nav>
   <app-main-section></app-main-section>
 </div>
+<app-login *ngIf="!login.isLogin()"></app-login>
