@@ -23,7 +23,18 @@ export class LoginComponent implements OnInit {
   }
 
   doLogin(): void{
-    console.log(this.form.value);
-    this.login.login(this.form.value).subscribe(console.log);
+    this.login.login(this.form.value).subscribe(data => {
+
+      let i = 1.5;
+      const interval = setInterval(() => {
+        changeScale(i);
+        i += 0.01;
+      }, 2);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        localStorage.setItem('token', data['token']);
+      }, 600);
+    });
   }
 }
