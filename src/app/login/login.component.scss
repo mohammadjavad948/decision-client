@@ -25,4 +25,14 @@ canvas{
   background: #393e46;
   z-index: 0;
   border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-text{
+  font-size: 26px;
+  font-weight: 500;
 }
