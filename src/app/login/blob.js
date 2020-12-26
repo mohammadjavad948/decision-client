@@ -8,7 +8,6 @@ export function runAnime(){
   const c = canvas.getContext("2d");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  document.body.appendChild(canvas);
 
   class Blob {
     constructor() {
