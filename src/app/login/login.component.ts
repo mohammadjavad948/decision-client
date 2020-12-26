@@ -9,18 +9,21 @@ import {FormBuilder, FormGroup} from '@angular/forms';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  // @ts-ignore
   form: FormGroup;
   constructor(private login: LoginService, private fb: FormBuilder) {
+  }
+
+  ngOnInit(): void {
     this.form = this.fb.group({
       username: '',
       password: ''
     });
-  }
-
-  ngOnInit(): void {
     runAnime();
   }
 
-  doLogin(){
+  doLogin(): void{
+    console.log(this.form.value);
+    this.login.login(this.form.value).subscribe(console.log);
   }
 }

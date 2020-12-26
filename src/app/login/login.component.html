@@ -4,12 +4,12 @@
       <span class="top-text">Welcome</span>
       <mat-form-field appearance="outline" class="form">
         <mat-label>Username</mat-label>
-        <input type="text" matInput>
+        <input type="text" matInput formControlName="username">
         <mat-icon matPrefix class="icon">person</mat-icon>
       </mat-form-field>
       <mat-form-field appearance="outline" class="form">
         <mat-label>Password</mat-label>
-        <input type="text" matInput>
+        <input type="text" matInput formControlName="password">
         <mat-icon matPrefix class="icon">vpn_key</mat-icon>
       </mat-form-field>
       <button mat-flat-button color="accent" (click)="doLogin()">Login</button>
