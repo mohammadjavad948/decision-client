@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ApiService} from '../service/api.service';
 
 @Component({
   selector: 'app-right-nav',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./right-nav.component.scss']
 })
 export class RightNavComponent implements OnInit {
-
-  constructor() { }
+  users = [];
+  constructor(private api: ApiService) { }
 
   ngOnInit(): void {
+    this.fetchUsers();
   }
 
+  fetchUsers(): void{
+    this.api.getUsers().subscribe(data => {
+      this.users = data;
+    });
+  }
 }

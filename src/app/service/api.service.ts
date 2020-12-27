@@ -14,6 +14,11 @@ export class ApiService {
       headers: this.header()
     });
   }
+  public getUsers(): Observable<any>{
+    return this.http.get(environment.endpoint + '/users', {
+      headers: this.header()
+    });
+  }
   public header(): HttpHeaders{
     // @ts-ignore
     return new HttpHeaders({token: localStorage.getItem('token')});
