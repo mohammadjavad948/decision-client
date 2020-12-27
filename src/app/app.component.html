@@ -1,6 +1,6 @@
-<div class="main" *ngIf="login.isLogin() && serverOnline">
+<div class="main" *ngIf="login.isLogin() && serverOnline" @loading>
   <app-left-nav></app-left-nav>
   <app-main-section></app-main-section>
 </div>
-<app-login *ngIf="!login.isLogin() && serverOnline"></app-login>
-<app-loading *ngIf="!serverOnline"></app-loading>
+<app-login *ngIf="!login.isLogin() && serverOnline" @loding></app-login>
+<app-loading *ngIf="!serverOnline" @loading></app-loading>

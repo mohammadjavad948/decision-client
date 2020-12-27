@@ -4,6 +4,10 @@
   overflow: hidden;
 }
 
+:host{
+  overflow: hidden;
+}
+
 .image-background{
   background-image: url("/assets/image/back.svg");
   background-repeat: no-repeat;
