@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Socket} from 'ngx-socket-io';
 
 @Component({
   selector: 'app-main-section',
@@ -10,6 +11,9 @@ export class MainSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
-
+  connectToSocket(): void{
+    
+  }
 }
