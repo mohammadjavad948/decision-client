@@ -6,7 +6,7 @@ import {environment} from '../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class ChannelService {
+export class ApiService {
 
   constructor(private http: HttpClient) { }
   public getChannels(): Observable<any>{

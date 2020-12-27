@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ChannelService} from '../service/channel.service';
+import {ApiService} from '../service/api.service';
 
 @Component({
   selector: 'app-channel-list',
@@ -18,7 +18,7 @@ import {ChannelService} from '../service/channel.service';
 })
 export class ChannelListComponent implements OnInit {
   channels = [];
-  constructor(private channel: ChannelService) { }
+  constructor(private channel: ApiService) { }
 
   ngOnInit(): void {
     this.fetch();
