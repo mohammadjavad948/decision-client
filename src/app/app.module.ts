@@ -24,6 +24,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {HttpClientModule} from '@angular/common/http';
 import { LoadingComponent } from './loading/loading.component';
+import { SelectAChannelComponent } from './select-a-channel/select-a-channel.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { LoadingComponent } from './loading/loading.component';
     ChatInputComponent,
     UserChatComponent,
     LoginComponent,
-    LoadingComponent
+    LoadingComponent,
+    SelectAChannelComponent
   ],
   imports: [
     BrowserModule,
