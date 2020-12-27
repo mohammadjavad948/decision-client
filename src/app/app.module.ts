@@ -23,6 +23,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {HttpClientModule} from '@angular/common/http';
+import { LoadingComponent } from './loading/loading.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {HttpClientModule} from '@angular/common/http';
     ChatComponent,
     ChatInputComponent,
     UserChatComponent,
-    LoginComponent
+    LoginComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
