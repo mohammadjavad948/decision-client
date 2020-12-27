@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {ChannelService} from '../service/channel.service';
 
 @Component({
   selector: 'app-channel-list',
   template: `
     <div class="list">
-      <app-channel-link [channel]="{name: 'test'}"></app-channel-link>
+      <app-channel-link *ngFor="let channel of channels" [channel]="channel"></app-channel-link>
     </div>
   `,
   styles: [
@@ -16,10 +17,16 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class ChannelListComponent implements OnInit {
-
-  constructor() { }
+  channels = [];
+  constructor(private channel: ChannelService) { }
 
   ngOnInit(): void {
+    this.fetch();
   }
 
+  fetch(): void{
+    this.channel.getChannels().subscribe((data) => {
+      this.channels = data;
+    });
+  }
 }
