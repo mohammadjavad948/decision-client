@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { io } from 'socket.io-client';
 import { environment } from 'src/environments/environment';
+import {LoginService} from '../service/login.service';
 
 @Component({
   selector: 'app-main-section',
@@ -9,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class MainSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public login: LoginService) { }
 
   ngOnInit(): void {
     this.connectToSocket();
@@ -20,6 +21,11 @@ export class MainSectionComponent implements OnInit {
 
     socket.on('connect', () => {
         console.log(socket.id);
+
+        this.login.loginToSocket(socket);
+        socket.on('authenticated', () => {
+          console.log('yo');
+        });
     });
   }
 }
