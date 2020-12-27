@@ -1,0 +1,19 @@
+.frame{
+  width: calc(100% - 240px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/image/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
+}
+
+
+span{
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 100%;
+}
