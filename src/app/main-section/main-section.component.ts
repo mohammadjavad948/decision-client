@@ -10,22 +10,8 @@ import {LoginService} from '../service/login.service';
 })
 export class MainSectionComponent implements OnInit {
 
-  constructor(public login: LoginService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.connectToSocket();
-  }
-  connectToSocket(): void{
-    console.log('connnecting to socket');
-    const socket = io(environment.endpoint);
-
-    socket.on('connect', () => {
-        console.log(socket.id);
-
-        this.login.loginToSocket(socket);
-        socket.on('authenticated', () => {
-          console.log('yo');
-        });
-    });
   }
 }

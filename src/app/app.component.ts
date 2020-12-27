@@ -19,8 +19,14 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     const socket = io(environment.endpoint);
 
+    console.log('connnecting to socket');
     socket.on('connect', () => {
       this.serverOnline = true;
+
+      this.login.loginToSocket(socket);
+      socket.on('authenticated', () => {
+        console.log('yo');
+      });
     });
     socket.on('disconnect', () => {
       this.serverOnline = false;
