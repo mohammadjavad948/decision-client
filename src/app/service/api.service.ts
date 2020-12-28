@@ -14,6 +14,11 @@ export class ApiService {
       headers: this.header()
     });
   }
+  public getChannel(id: string): Observable<any>{
+    return this.http.get(environment.endpoint + '/channel/' + id, {
+      headers: this.header()
+    });
+  }
   public getUsers(): Observable<any>{
     return this.http.get(environment.endpoint + '/users', {
       headers: this.header()
