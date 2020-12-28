@@ -25,6 +25,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {HttpClientModule} from '@angular/common/http';
 import { LoadingComponent } from './loading/loading.component';
 import { SelectAChannelComponent } from './select-a-channel/select-a-channel.component';
+import { SettingComponent } from './setting/setting.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { SelectAChannelComponent } from './select-a-channel/select-a-channel.com
     UserChatComponent,
     LoginComponent,
     LoadingComponent,
-    SelectAChannelComponent
+    SelectAChannelComponent,
+    SettingComponent
   ],
   imports: [
     BrowserModule,
