@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import {ApiService} from '../service/api.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-channel-name',
   template: `
     <div class="top">
-      <span class="text">channel 1</span>
+      <span class="text">{{channel.name}}</span>
     </div>
     <hr>
   `,
@@ -16,10 +18,23 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class ChannelNameComponent implements OnInit {
-
-  constructor() { }
+  channel: any;
+  id = '';
+  constructor(private api: ApiService, private activatedRouter: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.routerParam();
+    this.fetchChannel();
   }
 
+  routerParam(): void{
+    this.activatedRouter.params.subscribe(({id}) => {
+      this.id = id;
+    });
+  }
+  fetchChannel(): void{
+    this.api.getChannel(this.id).subscribe(data => {
+      this.channel = data;
+    });
+  }
 }
