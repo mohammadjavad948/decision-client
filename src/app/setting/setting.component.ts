@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-setting',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./setting.component.scss']
 })
 export class SettingComponent implements OnInit {
-
+  @Output() closeClick = new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  close(): void{
+    this.closeClick.emit(true);
+  }
 }
